@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Login 05</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	
+	
+	<link rel="stylesheet" href="../static/css/img_to_text.css">
+
+	</head>
+	<body>
+		
+	<section class="ftco-section">
+		<div class="container">
+			
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section"></h2>
+				</div>
+			</div>
+			<div style="background-color: grey; background-size: cover; height: 700px;  margin-top: -100px; " class="row justify-content-center">
+				<div name="div1" style="padding-top: 200px;">
+					<div style="margin-right: 450px; margin-top: -100px;" class="col-md-7 col-lg-5">
+					<div class="wrap">
+						<div class="img" style="background-image: url(../static/img/NLP.jpg);"></div>
+						<div class="login-wrap p-4 p-md-5">
+			      	<div class="d-flex">
+			      		<div class="w-100">
+			      			<h3 class="mb-4">Text To Speech</h3>
+			      		</div>
+				</div>
+				
+
+			      	</div>
+							<!-- <form action="#" class="signin-form"> -->
+			      		<div class="form-group mt-3"  method="post">
+                            <form action="/predict" method="POST" name="image" enctype="multipart/form-data">
+                                <input  type="file" class="form-control" required name="image">
+			      			    <label class="form-control-placeholder" for="username"></label>
+								  <select style="width: 8cm; height: 1cm; margin-left: 13px; margin-bottom: 30px;" name="text1" id="language">
+									<option value="">Choose language</option>
+									<option value="English">English</option>
+									<option value="German">German</option>
+									<option value="Malayalam">Malayalam</option>
+									<option value="Hindi">Hindi</option>
+									<option value="Chinese">Chinese</option>
+									<option value="Spanish">Spanish</option>
+									<option value="Bengali">Bengali</option>
+									
+								  </select>
+                                <button type="submit" class="form-control btn btn-primary rounded submit px-3">submit</button>
+                            </form>
+			      		</div>
+		            
+		            <div class="form-group">
+
+		            	
+		            </div>
+					
+					
+	                 
+					
+		        </div>
+		      </div>
+				</div>
+				<!-- <div name="div2" style="margin-right: 50px; padding-top: 100px; margin-left: 10px;">
+					<h1>Text Extract :</h1>
+					<p style="font-size: xx-large;">{{ text }}</p>
+				</div> -->
+			
+			</div>
+		</div>
+
+	</section>
+
+	
+
+	</body>
+</html>
